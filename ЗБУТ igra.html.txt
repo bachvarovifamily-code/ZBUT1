@@ -1,0 +1,80 @@
+html, body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0d47a1,#42a5f5);
+
+    /* Автоматично мащабиране */
+    font-size:clamp(16px,1.5vw,28px);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+/* Заглавие */
+h1{
+    font-size:clamp(24px,3vw,56px);
+}
+
+/* Таймер */
+#timer{
+    font-size:clamp(40px,6vw,90px);
+}
+
+/* Бутони */
+button{
+    font-size:clamp(16px,1.8vw,32px);
+    min-height:70px;
+    min-width:180px;
+}
+
+/* Категории */
+.category{
+    font-size:clamp(18px,2vw,34px);
+    padding:20px;
+}
+
+/* Отбори */
+.team{
+    font-size:clamp(18px,2vw,36px);
+    width:min(25vw,250px);
+}
+
+/* Въпрос */
+#question{
+    font-size:clamp(24px,3vw,48px);
+}
+
+/* Отговор */
+#answer{
+    font-size:clamp(22px,2.5vw,42px);
+}
+
+/* Кутия за въпрос */
+#questionBox{
+    width:90vw;
+    max-width:1200px;
+}
+
+/* За много големи дисплеи */
+@media (min-width:1920px){
+
+.category{
+    padding:30px;
+}
+
+button{
+    min-height:90px;
+}
+
+}
